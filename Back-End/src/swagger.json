@@ -1,0 +1,110 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API do banco de currículos",
+      "description": "API desenvolvida com a intenção de integrar site de cadastro de currículos e banco de dados",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: nome, data de nascimento, cargo pretendido, estado civil, gênero, endereço, email, celular, identidade, cpf, veículo e habilitação",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "dataDeNascimento": {
+                      "type": "date"
+                    },
+                    "cargoPretendido": {
+                      "type": "string"
+                    },
+                    "estadoCivil": {
+                      "type": "string"
+                    },
+                    "genero": {
+                      "type": "string"
+                      },
+                    "endereco": {
+                        "properties": {
+                            "cep": {
+                                "type": "string"  
+                            },
+                            "logradouro": {
+                                "type": "string"
+                            },
+                            "numero": {
+                                "type": "string"
+                            },
+                            "bairro": {
+                                "type": "string"
+                            },
+                            "cidade": {
+                                "type": "string"
+                            },
+                            "estado": {
+                                "type": "string"
+                            }
+                        }
+                      },
+                    "identidade": {
+                        "type": "string"
+                    },
+                    "cpf": {
+                        "type": "string"
+                    },
+                    "veiculo": {
+                        "type": "string"
+                    },
+                    "habilitacao": {
+                        "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "Eu": {
+                    "value": {
+                      "nome": "Guilherme Amaral",
+                      "dataDeNascimento": "12/02/2002",
+                      "cargoPretendido": "Desenvolvedor Jr",
+                      "estadoCivil": "Solteiro",
+                      "genero": "Masculino cis",
+                      "endereco": {
+                          "cep": "00000-000",
+                          "logradouro": "Rua dos bobos",
+                          "numero": "0",
+                          "bairro": "São José",
+                          "cidade": "Recife",
+                          "estado": "Pernambuco"
+                      },
+                      "email": "guilhermeamaral81@hotmail.com",
+                      "celular": "(81) 99999-9999",
+                      "identidade": "9.999.999",
+                      "cpf": "123.456.789-00",
+                      "veiculo": "Não possuo",
+                      "habilitacao": "Não possuo"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
