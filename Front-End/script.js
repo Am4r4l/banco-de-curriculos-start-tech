@@ -102,7 +102,7 @@ if (nome == "" || cargoPretendido == "" || dataDeNascimento !== "" || cep == "" 
         email == false || identidade == "" || cpf == "") {
         alert('Por favor, preencha todos os campos corretamente.');
     } else {
-        criarCandidato();
+        createCandidate();
         alert('Cadastrando usuário...');
     }
 }
