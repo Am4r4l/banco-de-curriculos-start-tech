@@ -6,7 +6,7 @@ const routes = require('./routes');
 const app = express();
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://GuilhermeAmaral:dYSpBdPsI6mwemDQ@desafio-gama-academy.codfq.mongodb.net/Banco-de-curriculos?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://GuilhermeAmaral:S3nh4d34c3ss0@desafio-gama-academy.codfq.mongodb.net/Banco-de-curriculos?retryWrites=true&w=majority');
 
 app.use(cors());
 app.use(express.json());
