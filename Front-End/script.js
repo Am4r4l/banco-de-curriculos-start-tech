@@ -42,23 +42,24 @@ const LimpaEndereco = () => {
 
 const Form = () => {
     let form = {
-        nome: document.getElementById('nome').value,
-        cargoPretendido: document.getElementById('cargoPretendido').value,
-        dataDeNascimento: document.getElementById('ano').value,
-        estadoCivil: document.getElementById('estadoCivil').value,
-        genero: document.getElementById('genero').value,
-        cep: document.getElementById('cep').value,
-        numero: document.getElementById('numero').value,
-        bairro: document.getElementById('bairro').value,
-        cidade: document.getElementById('cidade').value,
-        estado: document.getElementById('estado').value,
-        celular: document.getElementById('celular').value,
-        telefone: document.getElementById('telefoneFixo').value,
-        email: document.getElementById('email').value,
-        identidade: document.getElementById('identidade').value,
-        cpf: document.getElementById('cpf').value,
-        veiculo: document.getElementById('veiculo').value,
-        habilitacao: document.getElementById('habilitacao').value,
+        nome: document.getElementById("nome").value,
+        cargoPretendido: document.getElementById("cargoPretendido").value,
+        dataDeNascimento: document.getElementById("dataDeNascimento").value,
+        estadoCivil: document.getElementById("estadoCivil").value,
+        genero: document.getElementById("genero").value,
+        cep: document.getElementById("cep").value,
+        numero: document.getElementById("numero").value,
+        bairro: document.getElementById("bairro").value,
+        cidade: document.getElementById("cidade").value,
+        estado: document.getElementById("estado").value,
+        celular: document.getElementById("celular").value,
+        telefoneFixo: document.getElementById("telefoneFixo").value,
+        contato: document.getElementById("contato").value,
+        email: document.getElementById("email").value,
+        identidade: document.getElementById("identidade").value,
+        cpf: document.getElementById("cpf").value,
+        veiculo: document.getElementById("veiculo").value,
+        habilitacao: document.getElementById("habilitacao").value,
     };
     console.log(form);
     return form
@@ -71,7 +72,7 @@ const createCandidate = async (candidate) => {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(Formulario())
+        body: JSON.stringify(Form())
     });
 }
 
