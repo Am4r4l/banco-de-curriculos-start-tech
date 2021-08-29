@@ -75,7 +75,7 @@ const createCandidate = async (candidate) => {
     });
 }
 
-if (requisicao.status === 200) {
+if (require.status === 200) {
     alert('Usuário Cadastrado!');
 }
 
