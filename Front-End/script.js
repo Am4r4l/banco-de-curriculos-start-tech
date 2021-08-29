@@ -65,7 +65,7 @@ const Formulario = () => {
 }
 
 const createCandidate = async (candidate) => {
-    const requisicao = await fetch('api-banco-curriculos.herokuapp.com/register', {
+    const requisicao = await fetch('https://api-banco-curriculos.herokuapp.com/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
