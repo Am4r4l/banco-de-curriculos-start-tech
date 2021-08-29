@@ -79,7 +79,7 @@ if (require.status === 200) {
     alert('Usuário Cadastrado!');
 }
 
-else if (requisicao.status === 500) {
+else if (require.status === 500) {
     alert('CPF, Email ou Identidade já cadastrados');
 }
 
