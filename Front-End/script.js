@@ -26,8 +26,6 @@ const buscaCEP = async () => {
     return validacao;
 }
 
-document.getElementById('cep').addEventListener('focusout', buscaCEP);
-
 const completaEndereco = (endereco) => {
     document.getElementById('logradouro').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
