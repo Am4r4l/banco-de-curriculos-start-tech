@@ -65,7 +65,7 @@ const Formulario = () => {
 }
 
 const createCandidate = async (candidate) => {
-    const require = await fetch('api-banco-curriculos.herokuapp.com/register', {
+    const requisicao = await fetch('api-banco-curriculos.herokuapp.com/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -75,11 +75,11 @@ const createCandidate = async (candidate) => {
     });
 }
 
-if (require.status === 200) {
+if (requisicao.status === 200) {
     alert('Usuário Cadastrado!');
 }
 
-else if (require.status === 500) {
+else if (requisicao.status === 500) {
     alert('CPF, Email ou Identidade já cadastrados');
 }
 
