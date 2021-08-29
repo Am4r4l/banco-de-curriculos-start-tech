@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 25px;
+    font-size: 25px;
+}
+
+header ul li a {
+    cursor: pointer;
+}
+
+body {
+    background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px
+}
+
+.container form .form-group {
+    text-align: left;
+    border: none;
+}
+
+.form-group {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+label, .p {
+    font-size: 20px;
+}
+
+.custom-select, .form-group input {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-div form button {
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #ae56da 50%, #A451Cd  50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 300ms ease-out;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.form-div form button:hover {
+    background-position: left bottom;
+    color: #FFF
+
+}
+
+.form-button {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+#sobre {
+    max-width: 40%;
+    margin: 0 auto;
+}
+h4 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#fale-conosco {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#fale-conosco ul {
+    display: flex;
+    justify-content: center;
+}
+
+#fale-conosco ul li {
+    padding: 25px;
+    font-size: 25px;
+}
+
+.linkedin img {
+    max-width: 40px;
+}
+
+.linkedin img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.email img {
+    max-width: 40px;
+}
+
+.email img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.whatsapp img {
+    max-width: 40px;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header h1 {
+        font-size: 30px;
+    }
+
+    header ul li {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    label, .form-group div p  {
+        font-size: 18px;
+    }
+
+    #sobre {
+        max-width: 90%;
+        text-align: justify;
+    }    
+
+    h4 {
+        font-size: 30px
+    }
+
+    .form-group, .custom-select {
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    .custom-select, .form-group input, textarea {
+        font-size: 14px;
+    }
+
+    .form-group button {
+        margin-bottom: -25px;
+    }
+
+    #fale-conosco {
+        max-width: 90%;
+    }
+
+    #fale-conosco ul li {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+}
+
+input:invalid {
+    border: 3px splid red;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-group {
+        width: 100%;
+    }
+}

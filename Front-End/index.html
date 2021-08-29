@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="/script.js"></script>
+
+    <title>JobsNET</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>JobsNET</h1>
+        </div>
+        <ul>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#fale-conosco">Fale Conosco</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Banco de Currículos</h2>
+
+    </section>
+
+    <section id="form" class="container">
+        <div class="form-div">
+                <h3>Informações Pessoais</h3>
+                <form action="#">
+                    <div class="form-group" id="infos-pessoais">
+                        <label for="nome">Nome Completo</label> <br>
+                        <input type="text" name="nome" placeholder="Insira seu nome" onchange="Formulario()" required> <br>
+                        <label for="cargo">Cargo Pretendido</label> <br>
+                        <input type="text" name="cargo" id="cargoPretendido" onchange="Formulario()" required> <br>
+                        <label for="nascimento">Data de Nascimento</label> <br>
+                        <input type="date" max="2003-08-29" min="1950-01-01" step="1" name="nascimento" id="dataDeNascimento" onchange="Formulario()" required> <br>
+                        <p class="p">Estado Civil</p>
+                        <select class="custom-select" id="estadoCivil" onchange="Formulario()">
+                            <option disabled selected value>Selecione uma opção</option>
+                            <option value="casado">Casado</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="estavel">União Estável</option>
+                        </select>
+                        
+                        <!-- distinção entre pessoas cis e trans apenas para tratar de vagas direcionadas a minorias para fins de inclusão social e diversidade -->
+                        <div>
+                        <p class="p">Gênero</p>
+                            <select class="custom-select" id="genero" onchange="Formulario()">
+                                <option disabled selected value>Selecione uma opção</option>
+                                <option value="homem-cis">Homem Cis</option>
+                                <option value="homem-trans">Homem Trans</option>
+                                <option value="mulher-cis">Mulher Cis</option>
+                                <option value="mulher-trans">Mulher Trans</option>
+                                <option value="nao-binario">Não-Binário</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <h3>Endereço</h3>
+
+                    <div class="form-group" id="infos-endereco">
+                        <label for="cep">Cep</label> <br>
+                        <input type="text" name="cep" id="cep" maxlength="8" placeholder="ex: 10110010" onchange="Formulario()" required> <br>
+                        <span id="erroCEP" style="display: none;" role="alert">CEP inválido</span>
+                        <label for="logradouro">Logradouro</label> <br>
+                        <input type="text" name="logradouro" id="logradouro" placeholder="ex: Nome da Rua" onchange="Formulario()" required> <br>
+                        <label for="numero">Número</label> <br>
+                        <input type="text" name="numero" id="numero" placeholder="ex: 56" onchange="Formulario()" required> <br>
+                        <label for="bairro">Bairro</label> <br>
+                        <input type="text" name="bairro" id="logradouro" onchange="Formulario()" required> <br>
+                        <label for="cidade">Cidade</label> <br>
+                        <input type="text" name="cidade" id="cidade" onchange="Formulario()" required> <br>
+                        <label for="estado">Estado</label> <br>
+                        <input type="text" name="estado" id="estado" onchange="Formulario()" required> <br>
+                    </div>
+
+                    <h3>Contato</h3>
+
+                    <div class="form-group" id="infos-contato">
+                        <label for="celular">Celular (apenas números)</label> <br>
+                        <input type="text" name="celular" id="celular" maxlength="11" placeholder="ex: 81999999999" onchange="Formulario()" required > <br>
+                        <label for="telefone-fixo">Telefone  Fixo</label> <br>
+                        <input type="text" name="telefone-fixo" id="telefoneFixo" maxlength="10" placeholder="ex: 8134215678" onchange="Formulario()"> <br>
+                        <label for="contato">Nome de Contato</label> <br>
+                        <input type="text" name="contato" id="contato" onchange="Formulario()"> <br>
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email" placeholder="ex: meuemail@exemplo.com" onchange="Formulario()" required> <br>
+                    </div>
+
+                    <h3>Documentos</h3>
+
+                    <div class="form-group" id="documentos">
+                        <label for="cpf">CPF (apenas números)</label> <br>
+                        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="ex: 12345678900" onchange="Formulario()" required> <br>
+                        <label for="identidade">Identidade (apenas números)</label> <br>
+                        <input type="text" name="identidade" id="identidade" maxlength="7" onchange="Formulario()" required> <br>
+
+                        <div>
+                            <p class="p">Possui Veículo</p>
+                                <select class="custom-select" id="veiculo" onchange="Formulario()">
+                                    <option disabled selected value>Selecione uma opção</option>
+                                    <option value="carro">Sim, Carro</option>
+                                    <option value="moto">Sim, Moto</option>
+                                    <option value="carro-moto">Sim, Carro e Moto</option>
+                                    <option value="sem-veiculo">Não possuo</option>
+                                </select>
+                        
+                            <p class="p">Habilitação</p>
+                                <select class="custom-select" id="habilitacao" onchange="Formulario()">
+                                    <option disabled selected value>Selecione uma opção</option>
+                                    <option value="cnh-a">Categoria A</option>
+                                    <option value="cnh-b">Categoria B</option>
+                                    <option value="cnh-ab">Categoria A/B</option>
+                                    <option value="cnh-c">Categoria C</option>
+                                    <option value="cnh-d">Categoria D</option>
+                                    <option value="cnh-e">Categoria E</option>
+                                    <option value="sem-cnh">Não Possuo</option>
+                                </select>  
+                        </div>  
+                    </div>
+
+                    <div class="form-button">
+                    <button type="submit" id="submit" onclick="checkForm()">Enviar!</button>
+                    </div>
+
+                </form>
+
+
+        <section id="sobre">
+            <h4>Quem Somos</h4>
+            <br>
+            <p>
+                A JobsNET é atualmente a maior empresa de redirecionamento de currículos do Brasil. Graças às nossas parcerias com
+                grandes empresas, aproximadamente 2000 currículos são enviados por dia da nossa platadorma para o RH de nossas
+                parceiras.
+            </p>
+        </section>
+
+        <section id="fale-conosco">
+            <h4>Fale Conosco</h4>
+            <br>
+            <ul>
+                <li class="linkedin"><img src="src/LinkedIn_logo.png"></li>
+                <li class="email"><img src="src/email_logo3.png."></li>
+                <li class="whatsapp"><img src="src/—Pngtree—whatsapp white icon_3570428.png"></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/am4r4l/" target="_blank">Guilherme Amaral</a> durante o programa
+            Start Tech da <a href="https://www.gama.academy" target="_blank">Gama Academy</a></p>
+    </footer>
+</body>
+</html>
