@@ -1,13 +1,5 @@
 const validaCEP = (cep) => cep.toString().length == 8;
 
-let endereco = {
-        cep: document.getElementById('cep').value,
-        logradouro: document.getElementById('logradouro').value,
-        numero: document.getElementById('numero').value,
-        bairro: document.getElementById('bairro').value,
-        cidade: document.getElementById('cidade').value,
-        estado: document.getElementById('estado').value
-}
 const buscaCEP = async () => {
     LimpaEndereco();
     let validacao = false;
