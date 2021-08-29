@@ -102,11 +102,11 @@
                           "estado": "Pernambuco"
                       },
                       "email": "guilhermeamaral81@hotmail.com",
-                      "celular": "(81) 99999-9999",
-                      "telefoneFixo": "(81) 34215768",
+                      "celular": "81999999999",
+                      "telefoneFixo": "8134215768",
                       "contato": "Eu mesmo",
-                      "identidade": "9.999.999",
-                      "cpf": "123.456.789-00",
+                      "identidade": "9999999",
+                      "cpf": "12345678900",
                       "veiculo": "Não possuo",
                       "habilitacao": "Não possuo"
                     }
