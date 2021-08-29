@@ -66,7 +66,7 @@ const Form = () => {
 }
 
 const createCandidate = async (candidate) => {
-    const user = await fetch('https://api-banco-curriculos.herokuapp.com/register', {
+    const usuario = await fetch('https://api-banco-curriculos.herokuapp.com/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -76,11 +76,11 @@ const createCandidate = async (candidate) => {
     });
 }
 
-if (user.status === 200) {
+if (usuario.status === 200) {
     console.log(Form())
-        alert('deu certo');
-} else if (user.status === 500) {
-    alert ('já temos seus dados');
+        alert('Usuário cadastrado com sucesso!');
+} else if (usuario.status === 500) {
+    alert ('Nós já temos um cadastro com algum dos seus dados');
 }
 
 
@@ -94,12 +94,14 @@ function check_form() {
     let cidade = document.getElementById('cidade').value;
     let estado = document.getElementById('estado').value;
     let celular = document.getElementById('celular').value;
+    let telefoneFixo = document.getElementById('telefoneFixo').value;
+    let contato = document.getElementById('contato').value;
     let email = document.getElementById('email').value.mata;
     let identidade = document.getElementById('identidade').value;
 
 if (nome == "" || cargoPretendido == "" || dataDeNascimento !== "" || cep == "" || logradouro == ""
-        || numero == "" || bairro == "" || cidade == "" || estado == "" || celular == "" ||
-        email == false || identidade == "" || cpf == "") {
+        || numero == "" || bairro == "" || cidade == "" || estado == "" || celular == "" || telefone == "" ||
+        contato == "" || email == false || identidade == "" || cpf == "") {
         alert('Por favor, preencha todos os campos corretamente.');
     } else {
         createCandidate();
