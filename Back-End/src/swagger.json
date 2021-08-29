@@ -62,6 +62,15 @@
                             }
                         }
                       },
+                    "celular": {
+                      "type": "string"
+                    },  
+                    "telefoneFixo": {
+                      "type": "string"
+                    },  
+                    "contato": {
+                      "type": "string"
+                    },  
                     "identidade": {
                         "type": "string"
                     },
