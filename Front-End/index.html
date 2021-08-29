@@ -30,10 +30,10 @@
     <section id="form" class="container">
         <div class="form-div">
                 <h3>Informações Pessoais</h3>
-                <form action="#">
+                <form action="#" method="post" onchange="Formulario()">
                     <div class="form-group" id="infos-pessoais">
                         <label for="nome">Nome Completo</label> <br>
-                        <input type="text" name="nome" placeholder="Insira seu nome" onchange="Formulario()" required> <br>
+                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" onchange="Formulario()" required> <br>
                         <label for="cargo">Cargo Pretendido</label> <br>
                         <input type="text" name="cargo" id="cargoPretendido" onchange="Formulario()" required> <br>
                         <label for="nascimento">Data de Nascimento</label> <br>
