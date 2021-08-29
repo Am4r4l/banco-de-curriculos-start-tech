@@ -76,14 +76,6 @@ const createCandidate = async (candidate) => {
     });
 }
 
-if (requisicao.status === 200) {
-    alert('Usuário Cadastrado!');
-}
-
-else if (requisicao.status === 500) {
-    alert('CPF, Email ou Identidade já cadastrados');
-}
-
 
 function check_form() {
     let nome = document.getElementById('nome').value;
