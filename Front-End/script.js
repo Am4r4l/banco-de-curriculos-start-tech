@@ -66,7 +66,7 @@ const Form = () => {
 }
 
 const createCandidate = async (candidate) => {
-    const requisicao = await fetch('https://api-banco-curriculos.herokuapp.com/register', {
+    const user = await fetch('https://api-banco-curriculos.herokuapp.com/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -74,6 +74,13 @@ const createCandidate = async (candidate) => {
         },
         body: JSON.stringify(Form())
     });
+}
+
+if (user.status === 200) {
+    console.log(Form())
+        alert('deu certo');
+} else if (user.status === 500) {
+    alert ('já temos seus dados');
 }
 
 
