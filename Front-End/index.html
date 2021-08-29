@@ -30,16 +30,16 @@
     <section id="form" class="container">
         <div class="form-div">
                 <h3>Informações Pessoais</h3>
-                <form action="#" method="post" onchange="Formulario()">
+                <form action="#" method="post" onchange="Form()">
                     <div class="form-group" id="infos-pessoais">
                         <label for="nome">Nome Completo</label> <br>
-                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" onchange="Formulario()" required> <br>
+                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" onchange="Form()" required> <br>
                         <label for="cargo">Cargo Pretendido</label> <br>
-                        <input type="text" name="cargo" id="cargoPretendido" onchange="Formulario()" required> <br>
+                        <input type="text" name="cargo" id="cargoPretendido" onchange="Form()" required> <br>
                         <label for="nascimento">Data de Nascimento</label> <br>
-                        <input type="date" max="2003-08-29" min="1950-01-01" step="1" name="nascimento" id="dataDeNascimento" onchange="Formulario()" required> <br>
+                        <input type="date" max="2003-08-29" min="1950-01-01" step="1" name="nascimento" id="dataDeNascimento" onchange="Form()" required> <br>
                         <p class="p">Estado Civil</p>
-                        <select class="custom-select" id="estadoCivil" onchange="Formulario()">
+                        <select class="custom-select" id="estadoCivil" onchange="Form()">
                             <option disabled selected value>Selecione uma opção</option>
                             <option value="casado">Casado</option>
                             <option value="solteiro">Solteiro</option>
@@ -49,7 +49,7 @@
                         <!-- distinção entre pessoas cis e trans apenas para tratar de vagas direcionadas a minorias para fins de inclusão social e diversidade -->
                         <div>
                         <p class="p">Gênero</p>
-                            <select class="custom-select" id="genero" onchange="Formulario()">
+                            <select class="custom-select" id="genero" onchange="Form()">
                                 <option disabled selected value>Selecione uma opção</option>
                                 <option value="homem-cis">Homem Cis</option>
                                 <option value="homem-trans">Homem Trans</option>
@@ -65,44 +65,44 @@
 
                     <div class="form-group" id="infos-endereco">
                         <label for="cep">Cep</label> <br>
-                        <input type="text" name="cep" id="cep" maxlength="8" placeholder="ex: 10110010" onchange="Formulario()" required> <br>
+                        <input type="text" name="cep" id="cep" maxlength="8" placeholder="ex: 10110010" onchange="Form()" required> <br>
                         <span id="erroCEP" style="display: none;" role="alert">CEP inválido</span>
                         <label for="logradouro">Logradouro</label> <br>
-                        <input type="text" name="logradouro" id="logradouro" placeholder="ex: Nome da Rua" onchange="Formulario()" required> <br>
+                        <input type="text" name="logradouro" id="logradouro" placeholder="ex: Nome da Rua" onchange="Form()" required> <br>
                         <label for="numero">Número</label> <br>
-                        <input type="text" name="numero" id="numero" placeholder="ex: 56" onchange="Formulario()" required> <br>
+                        <input type="text" name="numero" id="numero" placeholder="ex: 56" onchange="Form()" required> <br>
                         <label for="bairro">Bairro</label> <br>
-                        <input type="text" name="bairro" id="logradouro" onchange="Formulario()" required> <br>
+                        <input type="text" name="bairro" id="logradouro" onchange="Form()" required> <br>
                         <label for="cidade">Cidade</label> <br>
-                        <input type="text" name="cidade" id="cidade" onchange="Formulario()" required> <br>
+                        <input type="text" name="cidade" id="cidade" onchange="Form()" required> <br>
                         <label for="estado">Estado</label> <br>
-                        <input type="text" name="estado" id="estado" onchange="Formulario()" required> <br>
+                        <input type="text" name="estado" id="estado" onchange="Form()" required> <br>
                     </div>
 
                     <h3>Contato</h3>
 
                     <div class="form-group" id="infos-contato">
                         <label for="celular">Celular (apenas números)</label> <br>
-                        <input type="text" name="celular" id="celular" maxlength="11" placeholder="ex: 81999999999" onchange="Formulario()" required > <br>
+                        <input type="text" name="celular" id="celular" maxlength="11" placeholder="ex: 81999999999" onchange="Form()" required > <br>
                         <label for="telefone-fixo">Telefone  Fixo</label> <br>
-                        <input type="text" name="telefone-fixo" id="telefoneFixo" maxlength="10" placeholder="ex: 8134215678" onchange="Formulario()"> <br>
+                        <input type="text" name="telefone-fixo" id="telefoneFixo" maxlength="10" placeholder="ex: 8134215678" onchange="Form()"> <br>
                         <label for="contato">Nome de Contato</label> <br>
-                        <input type="text" name="contato" id="contato" onchange="Formulario()"> <br>
+                        <input type="text" name="contato" id="contato" onchange="Form()"> <br>
                         <label for="email">Email</label> <br>
-                        <input type="email" name="email" id="email" placeholder="ex: meuemail@exemplo.com" onchange="Formulario()" required> <br>
+                        <input type="email" name="email" id="email" placeholder="ex: meuemail@exemplo.com" onchange="Form()" required> <br>
                     </div>
 
                     <h3>Documentos</h3>
 
                     <div class="form-group" id="documentos">
                         <label for="cpf">CPF (apenas números)</label> <br>
-                        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="ex: 12345678900" onchange="Formulario()" required> <br>
+                        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="ex: 12345678900" onchange="Form()" required> <br>
                         <label for="identidade">Identidade (apenas números)</label> <br>
-                        <input type="text" name="identidade" id="identidade" maxlength="7" onchange="Formulario()" required> <br>
+                        <input type="text" name="identidade" id="identidade" maxlength="7" onchange="Form()" required> <br>
 
                         <div>
                             <p class="p">Possui Veículo</p>
-                                <select class="custom-select" id="veiculo" onchange="Formulario()">
+                                <select class="custom-select" id="veiculo" onchange="Form()">
                                     <option disabled selected value>Selecione uma opção</option>
                                     <option value="carro">Sim, Carro</option>
                                     <option value="moto">Sim, Moto</option>
@@ -111,7 +111,7 @@
                                 </select>
                         
                             <p class="p">Habilitação</p>
-                                <select class="custom-select" id="habilitacao" onchange="Formulario()">
+                                <select class="custom-select" id="habilitacao" onchange="Form()">
                                     <option disabled selected value>Selecione uma opção</option>
                                     <option value="cnh-a">Categoria A</option>
                                     <option value="cnh-b">Categoria B</option>

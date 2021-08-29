@@ -40,7 +40,7 @@ const LimpaEndereco = () => {
     document.getElementById('estado').value = "";
 }
 
-const Formulario = () => {
+const Form = () => {
     let form = {
         nome: document.getElementById('nome').value,
         cargoPretendido: document.getElementById('cargoPretendido').value,
@@ -97,7 +97,7 @@ function check_form() {
     let email = document.getElementById('email').value.mata;
     let identidade = document.getElementById('identidade').value;
 
-if (nome == "" || cargoPretendido == "" || dataDeNascimento !== Date || cep == "" || logradouro == ""
+if (nome == "" || cargoPretendido == "" || dataDeNascimento !== "" || cep == "" || logradouro == ""
         || numero == "" || bairro == "" || cidade == "" || estado == "" || celular == "" ||
         email == false || identidade == "" || cpf == "") {
         alert('Por favor, preencha todos os campos corretamente.');
