@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const validaCEP = (cep) => cep.toString().length == 8;
 
 let endereco = {
